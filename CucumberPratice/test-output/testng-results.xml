@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cucumber Pratice Test" duration-ms="20865" started-at="2020-01-21T12:16:48Z" finished-at="2020-01-21T12:17:09Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="CucumberRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="feature" class="myRunner.CucumberRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="20865" started-at="2020-01-21T12:16:48Z" finished-at="2020-01-21T12:17:09Z">
+      <class name="myRunner.CucumberRunner">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="setUp" is-config="true" duration-ms="7989" started-at="2020-01-21T17:46:40Z" finished-at="2020-01-21T17:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="setUpClass" is-config="true" duration-ms="105" started-at="2020-01-21T17:46:48Z" finished-at="2020-01-21T17:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="feature" duration-ms="20211" started-at="2020-01-21T17:46:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-01-21T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Free CRM Login Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownr(org.testng.ITestResult)[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="tearDownr" is-config="true" duration-ms="251" started-at="2020-01-21T17:47:08Z" finished-at="2020-01-21T17:47:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=feature status=SUCCESS method=CucumberRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.CucumberRunner@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownr -->
+        <test-method status="PASS" signature="takeScreenshot()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="takeScreenshot" is-config="true" duration-ms="249" started-at="2020-01-21T17:47:09Z" finished-at="2020-01-21T17:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-01-21T17:47:09Z" finished-at="2020-01-21T17:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="generateHTMLReports()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="generateHTMLReports" is-config="true" duration-ms="476" started-at="2020-01-21T17:47:09Z" finished-at="2020-01-21T17:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateHTMLReports -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:myRunner.CucumberRunner@589838eb]" name="quit" is-config="true" duration-ms="641" started-at="2020-01-21T17:47:09Z" finished-at="2020-01-21T17:47:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- myRunner.CucumberRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Cucumber Pratice Test -->
+</testng-results>
