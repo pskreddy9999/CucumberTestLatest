@@ -7,9 +7,9 @@
         <methods>
           <include name="tearDownClass"/>
           <include name="setUp"/>
+          <include name="generateHTMLReports"/>
           <include name="tearDownr"/>
-          <include name="takeScreenshot"/>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0 1"/>
           <include name="setUpClass"/>
           <include name="quit"/>
         </methods>

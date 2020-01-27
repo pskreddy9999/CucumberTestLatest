@@ -37,10 +37,11 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import helpers.ReportHelper;
 
-@CucumberOptions(strict = true, monochrome = true,
+
+@CucumberOptions(strict = true, monochrome = true, 
                   features = "src\\test\\resources\\features", 
                   glue = "stepDefinition", 
-                  tags = {"@Regression" },
+                  tags = {"@Regression,@smoke" },
                   format = { "pretty", 
                 		    "json:target/cucumber.json" })
 
@@ -112,7 +113,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 	}
 
 	public void explicitWait(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -146,10 +147,10 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		setEnv();
 	}
 
-	@AfterClass(alwaysRun = true)
-	public void takeScreenshot() throws IOException {
+	//@AfterClass(alwaysRun = true)
+	public void takeScreenshot(String ImgName) throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File trgtFile = new File(System.getProperty("user.dir") + "//Screenshots/screenshot.png");
+		File trgtFile = new File(System.getProperty("user.dir") + "//Screenshots/" + ImgName +".png");
 		trgtFile.getParentFile().mkdir();
 		trgtFile.createNewFile();
 		Files.copy(scrFile, trgtFile); 
@@ -197,6 +198,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
 	@AfterSuite(alwaysRun = true)
 	public void quit() throws IOException, InterruptedException {
-		driver.quit();
+		//driver.quit();
+		System.out.println("Close the current browser");
 	}
 }
