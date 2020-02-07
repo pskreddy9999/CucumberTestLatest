@@ -11,7 +11,7 @@ Then user clicks on login button
 
 Then Click on Admin link
 Then click on Settings option
-Then click on logout option
+Then click on logout option	1
 
 Examples: 
 

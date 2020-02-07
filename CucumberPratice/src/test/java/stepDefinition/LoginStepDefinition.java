@@ -80,7 +80,7 @@ public class LoginStepDefinition extends CucumberRunner {
 	 @Then("^click on Settings option$")
 	 public void click_On_Settings() {
 		 driver.findElement(By.id("welcome")).click();
-	 }
+		   }
 	 
 	 @Then("^click on logout option$")
 	 public void Click_On_LogOut() throws IOException {
