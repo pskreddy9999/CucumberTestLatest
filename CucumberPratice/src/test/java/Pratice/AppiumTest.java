@@ -57,6 +57,7 @@ public class AppiumTest extends Base{
 	    
 	    /*Commons.keyBoardMethods();
 	    Commons.clickElementWithByXpath("//android.widget.TextView[@text='Views']");*/
+		
 	   // driver.pressKeyCode(AndroidKeyCode.BACK); Not working this refer different on website
 	    
 /******    8) Running with package                                 ********/

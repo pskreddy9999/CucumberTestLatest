@@ -4,7 +4,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -73,13 +72,14 @@ public class Base {
 	  
 	  cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
 	  cap.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+	  cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 	  cap.setCapability("chromedriverExecutable", "C:\\Users\\spemmana\\node_modules\\appium\\node_modules\\appium-chromedriver\\chromedriver\\win\\chromedriver.exe");
 	  
 	  //cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
 	  //capabilities.setCapability("appPackage", "com.android.chrome");
 	  //capabilities.setCapability("browserName", "Chrome");
 	  // cap.setCapability("appActivity", "com.google.android.browser.download.DownloadActivity");
-	 //cap.setCapability("adbExecTimeout", 40000);
+	  //cap.setCapability("adbExecTimeout", 40000);
  
 	  driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

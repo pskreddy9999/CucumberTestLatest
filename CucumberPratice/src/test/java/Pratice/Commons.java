@@ -5,20 +5,12 @@ import static io.appium.java_client.touch.offset.ElementOption.element; // We ne
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions; // Same above
 import static java.time.Duration.ofSeconds;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-import io.appium.java_client.remote.MobilePlatform;
 
 public class Commons extends Base {
 
