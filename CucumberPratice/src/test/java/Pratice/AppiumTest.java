@@ -9,7 +9,7 @@ public class AppiumTest extends Base{
 
 /*******  Main capabilities to run                     ********/	
 		
-	    //Base.Capabilities("emulator");
+	    Base.Capabilities("emulator");
 
 /*******  1) Getting the pop text, touch options and long press   ********/
 	    
@@ -23,12 +23,12 @@ public class AppiumTest extends Base{
 	    
 /*******   2) Using clicking & senKeys with different locators using *********/
 
-		/*driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
 		driver.findElementById("android:id/checkbox").click();
 		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
 		driver.findElementByClassName("android.widget.EditText").sendKeys("Hello World");
-		driver.findElementsByClassName("android.widget.Button").get(1).click();*/
+		driver.findElementsByClassName("android.widget.Button").get(1).click();
 	    
 /********	3) Swape the (Re_seting Clock using TouchAction)       ********/
 	    
@@ -66,8 +66,8 @@ public class AppiumTest extends Base{
 		
 /*******  9) Browser launch to automate with different capabilities *******/	
 		
-		Base.mobileBrowsers();
-		Commons.browserWithRemoteDeviceConnectionAndLaunchingUrl();
+		/*Base.mobileBrowsers();
+		Commons.browserWithRemoteDeviceConnectionAndLaunchingUrl();*/
 	}
 	
 

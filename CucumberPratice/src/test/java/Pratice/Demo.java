@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import myRunner.CucumberRunner;
 
@@ -16,12 +17,13 @@ public class Demo extends CucumberRunner {
 	public static void main(String[] args) throws InterruptedException {
 	
 		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\windows\\chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
+		driver = new ChromeDriver(options);
+		driver.manage().window().fullscreen();
+		driver.get("https://www.javatpoint.com/java-keywords");
 		
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://experitest.com/");
-		
-		mouseMoveToElement(By.xpath("//*[@class='ut-main-navigation-link sf-with-ul']"));
+		//mouseMoveToElement(By.xpath("//*[@class='ut-main-navigation-link sf-with-ul']"));
 		
 	}
 	
