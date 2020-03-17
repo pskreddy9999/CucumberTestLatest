@@ -5,6 +5,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import myRunner.CucumberRunner;
 
@@ -22,12 +24,15 @@ public class Demo extends CucumberRunner {
 		driver = new ChromeDriver(options);
 		driver.manage().window().fullscreen();
 		driver.get("https://www.javatpoint.com/java-keywords");
+		driver.findElement(By.id("gsc-i-id1")).sendKeys("Selenium");
+		//driver.findElement(By.xpath(""));
+			
 		
 		//mouseMoveToElement(By.xpath("//*[@class='ut-main-navigation-link sf-with-ul']"));
 		
 	}
 	
-	public static void mouseMoveToElement(By by) {
+	public static void mouseMoveToElement(By by) {  
 
 		try {
 			
